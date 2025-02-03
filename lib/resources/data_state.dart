@@ -1,7 +1,7 @@
 import 'dart:async';
 
+import 'package:core/utils/logger/logger.dart';
 import 'package:firebase_core/firebase_core.dart';
-import '../../product/utility/logger/logger.dart';
 
 /// An abstract class representing the state of data, which can either be a
 /// success or a failure.

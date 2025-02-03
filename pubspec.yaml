@@ -45,7 +45,7 @@ dependencies:
   # for markdown support -> https://pub.dev/packages/flutter_markdown 
   flutter_markdown: ^0.7.3+2
   flutter_svg: ^2.0.16
-  
+  easy_localization: ^3.0.7
 
    # for camera usage  -> https://pub.dev/packages/image_picker
   # for image caching -> https://pub.dev/packages/cached_network_image

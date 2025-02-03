@@ -1,7 +1,7 @@
-import '../../product/utility/logger/logger.dart';
+import 'package:core/utils/logger/logger.dart';
+
 import '../resources/firebase%20utilities/firebase_utils.dart';
 import '../resources/firebase%20utilities/firestore_utils.dart';
-import '../resources/id_generator.dart';
 import '../utils/constants/firebase/collection_enums.dart';
 import '../utils/constants/firebase/user_doc_enum.dart';
 

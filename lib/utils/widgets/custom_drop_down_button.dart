@@ -1,7 +1,7 @@
+import 'package:core/utils/constants/app_colors.dart';
+import 'package:core/utils/constants/border_radiuses.dart';
 import 'package:flutter/material.dart';
 
-import '../../../product/utility/constants/app_colors.dart';
-import '../../../product/utility/constants/border_radiuses.dart';
 import '../../extensions/context_extension.dart';
 
 /// A custom dropdown button widget that allows the user to select an item from a list of items.

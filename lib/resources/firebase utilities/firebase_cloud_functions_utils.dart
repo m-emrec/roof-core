@@ -1,6 +1,6 @@
 import 'package:cloud_functions/cloud_functions.dart';
-import 'package:roof_admin_panel/core/resources/firebase%20utilities/firebase_utils.dart';
-import 'package:roof_admin_panel/core/utils/constants/firebase/cloud_function_names.dart';
+import 'package:core/resources/firebase%20utilities/firebase_utils.dart';
+import 'package:core/utils/constants/firebase/cloud_function_names.dart';
 
 /// A mixin that provides Firebase Cloud Functions utilities.
 ///
