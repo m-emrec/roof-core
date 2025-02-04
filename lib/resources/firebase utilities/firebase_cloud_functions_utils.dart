@@ -1,6 +1,9 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:core/resources/firebase%20utilities/firebase_utils.dart';
 import 'package:core/utils/constants/firebase/cloud_function_names.dart';
+
+import '../../utils/constants/firebase/user_doc_enum.dart';
 
 /// A mixin that provides Firebase Cloud Functions utilities.
 ///
@@ -35,10 +38,20 @@ mixin FirebaseCloudFunctionsUtils on FirebaseUtils {
   /// - `error` - A [String] message that contains the error message.
   Future<HttpsCallableResult<Map<String, dynamic>>> createUserWithPhoneNumber({
     required Map<String, dynamic> user,
-  }) =>
-      functions
-          .httpsCallable(
-            CloudFunctionNames.createUserWithPhoneNumber.name,
-          )
-          .call(user);
+  }) {
+    final Map<String, dynamic> modifiedUserMap = user.map((key, val) {
+      if (key == UserDocEnum.membershipEndDate.name ||
+          key == UserDocEnum.membershipStartDate.name) {
+        val as Timestamp;
+        return MapEntry(key, val.millisecondsSinceEpoch);
+      }
+      return MapEntry(key, val);
+    });
+
+    return functions
+        .httpsCallable(
+          CloudFunctionNames.createUserWithPhoneNumber.name,
+        )
+        .call(modifiedUserMap);
+  }
 }

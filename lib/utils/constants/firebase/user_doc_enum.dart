@@ -12,7 +12,7 @@ enum UserDocEnum {
   livingCity,
   memberNumber,
   members,
-  membershipEndDate,
+  memberhipEndDate,
   membershipStartDate,
 
   mentatId,
