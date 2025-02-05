@@ -23,7 +23,7 @@ mixin FirebaseCloudFunctionsUtils on FirebaseUtils {
   ///
   ///
   String getErrorCode(HttpsCallableResult<Map<String, dynamic>> response) =>
-      response.data['error']["errorInfo"]["code"].toString();
+      response.data['error']["errorInfo"]["code"].toString().split('/').last;
 
   /// Create a new user with a phone number.
   ///
