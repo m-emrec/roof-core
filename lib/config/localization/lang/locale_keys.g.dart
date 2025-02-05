@@ -1,22 +1,20 @@
 // DO NOT EDIT. This is code generated via package:easy_localization/generate.dart
 
-abstract class LocaleKeys {
-  static const errors_phoneNumberCantStartWithZero =
-      'errors.phoneNumberCantStartWithZero';
+// ignore_for_file: constant_identifier_names
+
+abstract class  LocaleKeys {
+  static const errors_phoneNumberCantStartWithZero = 'errors.phoneNumberCantStartWithZero';
   static const errors_user_is_not_guest = 'errors.user_is_not_guest';
+  static const errors_phone_number_already_exists = 'errors.phone_number_already_exists';
   static const errors_too_many_requests = 'errors.too_many_requests';
   static const errors_user_not_exist = 'errors.user_not_exist';
   static const errors_invalid_name = 'errors.invalid_name';
   static const errors_invalid_name_length = 'errors.invalid_name_length';
   static const errors_invalid_phone_number = 'errors.invalid_phone_number';
-  static const errors_invalid_phone_number_length =
-      'errors.invalid_phone_number_length';
-  static const errors_The_email_address_is_already_in_use_by_another_account =
-      'errors.The_email_address_is_already_in_use_by_another_account';
-  static const errors_The_email_address_is_badly_formatted =
-      'errors.The_email_address_is_badly_formatted';
-  static const errors_INVALID_LOGIN_CREDENTIALS =
-      'errors.INVALID_LOGIN_CREDENTIALS';
+  static const errors_invalid_phone_number_length = 'errors.invalid_phone_number_length';
+  static const errors_The_email_address_is_already_in_use_by_another_account = 'errors.The_email_address_is_already_in_use_by_another_account';
+  static const errors_The_email_address_is_badly_formatted = 'errors.The_email_address_is_badly_formatted';
+  static const errors_INVALID_LOGIN_CREDENTIALS = 'errors.INVALID_LOGIN_CREDENTIALS';
   static const errors_invalid_api_key = 'errors.invalid_api_key';
   static const errors_user_disabled = 'errors.user_disabled';
   static const errors_user_not_found = 'errors.user_not_found';
@@ -25,17 +23,13 @@ abstract class LocaleKeys {
   static const errors_invalid_email = 'errors.invalid_email';
   static const errors_operation_not_allowed = 'errors.operation_not_allowed';
   static const errors_weak_password = 'errors.weak_password';
-  static const errors_provider_already_linked =
-      'errors.provider_already_linked';
-  static const errors_credential_already_in_use =
-      'errors.credential_already_in_use';
+  static const errors_provider_already_linked = 'errors.provider_already_linked';
+  static const errors_credential_already_in_use = 'errors.credential_already_in_use';
   static const errors_requires_recent_login = 'errors.requires_recent_login';
   static const errors_user_mismatch = 'errors.user_mismatch';
   static const errors_provider_not_found = 'errors.provider_not_found';
-  static const errors_invalid_verification_code =
-      'errors.invalid_verification_code';
-  static const errors_invalid_verification_id =
-      'errors.invalid_verification_id';
+  static const errors_invalid_verification_code = 'errors.invalid_verification_code';
+  static const errors_invalid_verification_id = 'errors.invalid_verification_id';
   static const errors_captcha_check_failed = 'errors.captcha_check_failed';
   static const errors_app_not_authorized = 'errors.app_not_authorized';
   static const errors_expired_action_code = 'errors.expired_action_code';
@@ -45,14 +39,12 @@ abstract class LocaleKeys {
   static const errors_internal_error = 'errors.internal_error';
   static const errors_invalid_tenant_id = 'errors.invalid_tenant_id';
   static const errors_tenant_id_mismatch = 'errors.tenant_id_mismatch';
-  static const errors_unsupported_tenant_operation =
-      'errors.unsupported_tenant_operation';
+  static const errors_unsupported_tenant_operation = 'errors.unsupported_tenant_operation';
   static const errors_quota_exceeded = 'errors.quota_exceeded';
   static const errors_tenant_not_found = 'errors.tenant_not_found';
   static const errors_code_expired = 'errors.code_expired';
   static const errors_user_token_expired = 'errors.user_token_expired';
-  static const errors_provider_data_not_found =
-      'errors.provider_data_not_found';
+  static const errors_provider_data_not_found = 'errors.provider_data_not_found';
   static const errors_invalid_uid = 'errors.invalid_uid';
   static const errors_permission_denied = 'errors.permission_denied';
   static const errors_unauthenticated = 'errors.unauthenticated';
@@ -69,8 +61,7 @@ abstract class LocaleKeys {
   static const errors_data_loss = 'errors.data_loss';
   static const errors_cancelled = 'errors.cancelled';
   static const errors_unknown = 'errors.unknown';
-  static const errors_account_exists_with_different_credential =
-      'errors.account_exists_with_different_credential';
+  static const errors_account_exists_with_different_credential = 'errors.account_exists_with_different_credential';
   static const errors_invalid_credential = 'errors.invalid_credential';
   static const errors_popup_closed_by_user = 'errors.popup_closed_by_user';
   static const errors_popup_blocked = 'errors.popup_blocked';
@@ -79,14 +70,11 @@ abstract class LocaleKeys {
   static const errors_no_such_provider = 'errors.no_such_provider';
   static const errors_token_expired = 'errors.token_expired';
   static const errors_user_cancelled = 'errors.user_cancelled';
-  static const errors_web_storage_unsupported =
-      'errors.web_storage_unsupported';
+  static const errors_web_storage_unsupported = 'errors.web_storage_unsupported';
   static const errors_invalid_user_token = 'errors.invalid_user_token';
   static const errors_custom_token_mismatch = 'errors.custom_token_mismatch';
-  static const errors_dynamic_link_not_activated =
-      'errors.dynamic_link_not_activated';
-  static const errors_dynamic_link_not_match_config =
-      'errors.dynamic_link_not_match_config';
+  static const errors_dynamic_link_not_activated = 'errors.dynamic_link_not_activated';
+  static const errors_dynamic_link_not_match_config = 'errors.dynamic_link_not_match_config';
   static const errors_image_not_found = 'errors.image_not_found';
   static const errors = 'errors';
   static const roles_admin = 'roles.admin';
@@ -120,42 +108,31 @@ abstract class LocaleKeys {
   static const common_close = 'common.close';
   static const common_giveUp = 'common.giveUp';
   static const common_gender = 'common.gender';
-  static const common_validationError_required =
-      'common.validationError.required';
+  static const common_validationError_required = 'common.validationError.required';
   static const common_validationError_length = 'common.validationError.length';
   static const common_validationError = 'common.validationError';
   static const common = 'common';
   static const auth_signin_pageTitle = 'auth.signin.pageTitle';
-  static const auth_signin_successfullySignedIn =
-      'auth.signin.successfullySignedIn';
+  static const auth_signin_successfullySignedIn = 'auth.signin.successfullySignedIn';
   static const auth_signin_email = 'auth.signin.email';
   static const auth_signin_password = 'auth.signin.password';
   static const auth_signin_forgotPassword = 'auth.signin.forgotPassword';
   static const auth_signin_showPassword = 'auth.signin.showPassword';
-  static const auth_signin_validationError_email =
-      'auth.signin.validationError.email';
-  static const auth_signin_validationError_password =
-      'auth.signin.validationError.password';
+  static const auth_signin_validationError_email = 'auth.signin.validationError.email';
+  static const auth_signin_validationError_password = 'auth.signin.validationError.password';
   static const auth_signin_validationError = 'auth.signin.validationError';
   static const auth_signin = 'auth.signin';
   static const auth = 'auth';
   static const membersView_pageTitle = 'membersView.pageTitle';
   static const membersView_memberCount = 'membersView.memberCount';
   static const membersView_addMember = 'membersView.addMember';
-  static const membersView_tableColumnLabels_memberNumber =
-      'membersView.tableColumnLabels.memberNumber';
-  static const membersView_tableColumnLabels_name =
-      'membersView.tableColumnLabels.name';
-  static const membersView_tableColumnLabels_membershipEndDate =
-      'membersView.tableColumnLabels.membershipEndDate';
-  static const membersView_tableColumnLabels_phoneNumber =
-      'membersView.tableColumnLabels.phoneNumber';
-  static const membersView_tableColumnLabels_role =
-      'membersView.tableColumnLabels.role';
-  static const membersView_tableColumnLabels_age =
-      'membersView.tableColumnLabels.age';
-  static const membersView_tableColumnLabels_memberShipDuration =
-      'membersView.tableColumnLabels.memberShipDuration';
+  static const membersView_tableColumnLabels_memberNumber = 'membersView.tableColumnLabels.memberNumber';
+  static const membersView_tableColumnLabels_name = 'membersView.tableColumnLabels.name';
+  static const membersView_tableColumnLabels_membershipEndDate = 'membersView.tableColumnLabels.membershipEndDate';
+  static const membersView_tableColumnLabels_phoneNumber = 'membersView.tableColumnLabels.phoneNumber';
+  static const membersView_tableColumnLabels_role = 'membersView.tableColumnLabels.role';
+  static const membersView_tableColumnLabels_age = 'membersView.tableColumnLabels.age';
+  static const membersView_tableColumnLabels_memberShipDuration = 'membersView.tableColumnLabels.memberShipDuration';
   static const membersView_tableColumnLabels = 'membersView.tableColumnLabels';
   static const membersView = 'membersView';
   static const addMember_pageTitle = 'addMember.pageTitle';
@@ -170,4 +147,5 @@ abstract class LocaleKeys {
   static const sidebar_logout = 'sidebar.logout';
   static const sidebar_accountSettings = 'sidebar.accountSettings';
   static const sidebar = 'sidebar';
+
 }

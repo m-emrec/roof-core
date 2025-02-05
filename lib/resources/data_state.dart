@@ -47,7 +47,7 @@ abstract class DataState<T> {
   /// Takes a [DataState] object and two functions, [onSuccess] and [onFailure],
   /// that return a [FutureOr] of type [T].
   static FutureOr<T> handleDataStateBasedAction<T>(
-    DataState<T> dataState, {
+    DataState dataState, {
     required FutureOr<T> Function() onSuccess,
     required FutureOr<T> Function() onFailure,
   }) async {

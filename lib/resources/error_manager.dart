@@ -1,6 +1,7 @@
-import 'package:core/utils/constants/lang/locale_keys.g.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+
+import '../utils/constants/lang/locale_keys.g.dart';
 
 enum Errors {
   // ignore: constant_identifier_names
@@ -29,6 +30,7 @@ abstract class AppErrorText {
     "The email address is already in use by another account.": tr(
       LocaleKeys.errors_The_email_address_is_already_in_use_by_another_account,
     ),
+
     "The email address is badly formatted.":
         tr(LocaleKeys.errors_The_email_address_is_badly_formatted),
     "INVALID_LOGIN_CREDENTIALS":
