@@ -41,6 +41,22 @@ abstract class DataState<T> {
       return DataFailed(e.toString());
     }
   }
+
+  /// A static method to call a function based on the given [DataState] object.
+  ///
+  /// Takes a [DataState] object and two functions, [onSuccess] and [onFailure],
+  /// that return a [FutureOr] of type [T].
+  static FutureOr<T> handleDataStateBasedAction<T>(
+    DataState<T> dataState, {
+    required FutureOr<T> Function() onSuccess,
+    required FutureOr<T> Function() onFailure,
+  }) async {
+    if (dataState is DataSuccess) {
+      return await onSuccess();
+    } else {
+      return onFailure();
+    }
+  }
 }
 
 /// A class representing a successful data state.
