@@ -14,7 +14,7 @@ enum UserDocEnum {
   members,
   membershipEndDate,
   membershipStartDate,
-
+  feedbacks,
   mentatId,
   mentorId,
   mentors,
