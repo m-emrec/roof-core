@@ -158,6 +158,50 @@
     "settings": "Ayarlar",
     "logout": "Çıkış Yap",
     "accountSettings": "Hesap Ayarları"
+},
+"feedback":{
+    "aboutPerson": {
+        "title": "Kişilerle İlgili",
+        "aboutAMember": "Bir üye hakkında şikayet",
+        "aboutAnAdmin": "Bir admin/moderatör hakkında şikayet",
+        "inappropriateBehavior": "Taciz veya uygunsuz davranış"
+        },
+        "aboutApp": {
+        "title": "Uygulama Hakkında",
+        "bugReport": "Hata Bildir",
+        "featureRequest": "Özellik İsteği",
+        "performanceIssue": "Performans Sorunu",
+        "other": "Diğer"
+        },
+        "aboutEvent": {
+        "title": "Etkinlik Hakkında",
+        "poorOrganization": "Kötü organizasyon",
+        "cancellation": "İptal veya gecikme",
+        "misinformation": "Yanlış bilgi paylaşımı",
+        "other": "Diğer"
+        },
+        "privacyAndSecurity": {
+        "title": "Gizlilik ve Güvenlik",
+        "dataLeak": "Veri sızıntısı şüphesi",
+        "unauthorizedAccess": "Yetkisiz erişim",
+        "accountBreach": "Hesap güvenliği ihlali"
+        },
+        "paymentIssues": {
+        "title": "Ödeme ve Faturalandırma Sorunları",
+        "incorrectCharge": "Yanlış ücretlendirme",
+        "failedTransaction": "Başarısız işlem",
+        "refundRequest": "İade talebi"
+        },
+        "aboutCommunity": {
+        "title": "Topluluk Kuralları İhlali",
+        "spam": "Spam veya sahte hesaplar",
+        "offensiveContent": "Hakaret veya uygunsuz içerik",
+        "threats": "Tehdit veya hakaret"
+        },
+        "general": {
+        "title": "Genel Şikayetler",
+        "another": "Diğer"
+        }
 }
    
 }
