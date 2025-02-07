@@ -49,12 +49,12 @@ abstract class DataState<T> {
   static FutureOr<void> handleDataStateBasedAction<T>(
     DataState<T> dataState, {
     required FutureOr<void> Function(DataSuccess<T>?) onSuccess,
-    required FutureOr<void> Function() onFailure,
+    required FutureOr<void> Function(DataFailed?) onFailure,
   }) async {
     if (dataState is DataSuccess<T>) {
       await onSuccess(dataState);
     } else {
-      onFailure();
+      onFailure(dataState as DataFailed);
     }
   }
 }
