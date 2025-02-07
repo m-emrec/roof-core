@@ -177,6 +177,7 @@ abstract class  LocaleKeys {
   static const feedback_aboutCommunity_offensiveContent = 'feedback.aboutCommunity.offensiveContent';
   static const feedback_aboutCommunity_threats = 'feedback.aboutCommunity.threats';
   static const feedback_aboutCommunity = 'feedback.aboutCommunity';
+  static const feedback_test = 'feedback.test';
   static const feedback_general_title = 'feedback.general.title';
   static const feedback_general_another = 'feedback.general.another';
   static const feedback_general = 'feedback.general';

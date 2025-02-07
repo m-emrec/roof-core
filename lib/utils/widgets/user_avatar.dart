@@ -1,5 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:core/utils/constants/lang/locale_keys.g.dart';
+import 'package:core/config/localization/lang/locale_keys.g.dart';
 import 'package:core/utils/constants/app_colors.dart';
 import 'package:core/utils/constants/gen/assets.gen.dart';
 import 'package:easy_localization/easy_localization.dart';
