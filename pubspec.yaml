@@ -10,13 +10,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-   ### Firebase
+    ### Firebase
   # For Firebase initialization. -> https://pub.dev/packages/firebase_core
   firebase_core: ^3.10.0
   # For storing storing nfc tag details. -> https://pub.dev/packages/firebase_database
   firebase_database: ^11.3.0
   # For storing item data in Firestore. -> https://pub.dev/packages/cloud_firestore
-  cloud_firestore: ^5.6.1 
+  cloud_firestore: ^5.6.1
   # For Authentication. -> https://pub.dev/packages/firebase_auth
   firebase_auth: ^5.4.0
   # For storing images. -> https://pub.dev/packages/firebase_storage
@@ -42,12 +42,13 @@ dependencies:
   google_fonts: ^6.2.1
   # for lottie animations -> https://pub.dev/packages/lottie
 
-  # for markdown support -> https://pub.dev/packages/flutter_markdown 
+  # for markdown support -> https://pub.dev/packages/flutter_markdown
   flutter_markdown: ^0.7.3+2
   flutter_svg: ^2.0.16
-  easy_localization: ^3.0.7
+  easy_localization:
+    ^3.0.7
 
-   # for camera usage  -> https://pub.dev/packages/image_picker
+    # for camera usage  -> https://pub.dev/packages/image_picker
   # for image caching -> https://pub.dev/packages/cached_network_image
   cached_network_image: ^3.4.1
   # for localizations -> https://pub.dev/packages/easy_localization
@@ -62,7 +63,6 @@ dependencies:
   syncfusion_flutter_core: ^28.1.41
   equatable: ^2.0.7
 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -71,11 +71,13 @@ dev_dependencies:
   very_good_analysis: ^7.0.0
   flutter_lints: ^5.0.0
 
-
-
-
 flutter:
-
+  assets:
+    - assets/texts/
+    - assets/icons/
+    - assets/images/
+    - assets/animations/
+    - assets/translations/
   # To add assets to your package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
