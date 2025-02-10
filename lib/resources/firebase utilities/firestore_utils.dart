@@ -221,4 +221,28 @@ mixin FirestoreUtils on FirebaseUtils {
           .doc(docId)
           .collection(subCollection.name)
           .doc(subDocId);
+
+  /// This method returns a ordered query for the specified collection.
+  ///
+  /// The query is ordered by the specified field in either ascending or
+  /// descending order.
+  Query<Map<String, dynamic>> getOrderedCollectionQuery({
+    required CollectionEnum collection,
+    required String field,
+    required bool descending,
+  }) =>
+      getCollectionRef(collection).orderBy(field, descending: descending);
+
+  /// Gets a query for a collection which is started after the given document.
+  ///
+  /// This method returns a query for a collection that starts after the document
+  ///
+  /// specified by the [docId] parameter.
+  Future<Query<Map<String, dynamic>>> getDocumentAfterQuery({
+    required CollectionEnum collection,
+    required dynamic docId,
+  }) async =>
+      getCollectionRef(collection).startAfterDocument(
+        await getDocumentRef(collection: collection, docId: docId).get(),
+      );
 }
