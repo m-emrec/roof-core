@@ -55,9 +55,9 @@ mixin FirebaseCloudFunctionsUtils on FirebaseUtils {
         .call(modifiedUserMap);
   }
 
-  Future<HttpsCallableResult<Map<String, dynamic>>> canUserAuthenticate(
-    String phoneNumber,
-  ) async {
+  Future<HttpsCallableResult<Map<String, dynamic>>> canUserAuthenticate({
+    required String phoneNumber,
+  }) async {
     return functions.httpsCallable(
       CloudFunctionNames.canUserAuthenticate.name,
     )({UserDocEnum.phoneNumber.name: phoneNumber});
