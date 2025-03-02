@@ -5,4 +5,5 @@ enum CollectionEnum {
   users,
   feedbacks,
   guests,
+  managers,
 }
