@@ -128,7 +128,7 @@ abstract class AppErrorText {
     if (errorCode.runtimeType != String) {
       try {
         errCode = errorCode.toString();
-        if (errCode.contains("Exception:")) {
+        if (errCode.startsWith("Exception:")) {
           errCode = errCode.split("Exception: ")[1];
         }
       } catch (e) {
