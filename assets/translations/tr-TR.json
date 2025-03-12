@@ -1,6 +1,7 @@
 {
     "errors": {
         "phoneNumberCantStartWithZero": "Lütfen telefon numaranızı başında 0 olmadan yazın.",
+        "email_not_verified": "E-posta adresiniz doğrulanmamış. Lütfen e-posta adresinizi doğrulayın.",
         "user_is_not_guest":"Girilen numara bir misafire ait değil.",
         "phone_number_already_exists": "Bu telefon numarası zaten bir üye tarafından kullanılıyor.",
         "too_many_requests":"Çok fazla istek gönderildiği için bir süreliğine bloklandınız. Lütfen bir süre sonra tekrar deneyin.",

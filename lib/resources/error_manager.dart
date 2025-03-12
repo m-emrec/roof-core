@@ -7,6 +7,7 @@ enum Errors {
   // ignore: constant_identifier_names
   user_is_not_guest,
   user_is_not_exist,
+  email_not_verified,
 }
 
 ///
@@ -22,6 +23,7 @@ abstract class AppErrorText {
   /// }
   /// ```
   static final Map<String, String> _errorText = {
+    Errors.email_not_verified.name: tr(LocaleKeys.errors_email_not_verified),
     Errors.user_is_not_guest.name: tr(LocaleKeys.errors_user_is_not_guest),
     "too-many-requests": LocaleKeys.errors_too_many_requests.tr(),
     Errors.user_is_not_exist.name: tr(LocaleKeys.errors_user_not_exist),

@@ -4,6 +4,7 @@
 
 abstract class  LocaleKeys {
   static const errors_phoneNumberCantStartWithZero = 'errors.phoneNumberCantStartWithZero';
+  static const errors_email_not_verified = 'errors.email_not_verified';
   static const errors_user_is_not_guest = 'errors.user_is_not_guest';
   static const errors_phone_number_already_exists = 'errors.phone_number_already_exists';
   static const errors_too_many_requests = 'errors.too_many_requests';
