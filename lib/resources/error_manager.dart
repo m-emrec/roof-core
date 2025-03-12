@@ -128,14 +128,15 @@ abstract class AppErrorText {
     if (errorCode.runtimeType != String) {
       try {
         errCode = errorCode.toString();
-        if (errCode.startsWith("Exception:")) {
-          errCode = errCode.split("Exception: ")[1];
-        }
       } catch (e) {
         return tr(LocaleKeys.errors_unknown);
       }
     }
     errCode = errorCode ?? "";
+
+    if (errCode.startsWith("Exception:")) {
+      errCode = errCode.split("Exception: ")[1];
+    }
 
     /// For debug purposes
     /// This part is to make debugging easier.
