@@ -32,7 +32,8 @@ abstract class AppErrorText {
     "The email address is already in use by another account.": tr(
       LocaleKeys.errors_The_email_address_is_already_in_use_by_another_account,
     ),
-
+    "phone-number-already-exists":
+        tr(LocaleKeys.errors_phone_number_already_exists),
     "The email address is badly formatted.":
         tr(LocaleKeys.errors_The_email_address_is_badly_formatted),
     "INVALID_LOGIN_CREDENTIALS":
