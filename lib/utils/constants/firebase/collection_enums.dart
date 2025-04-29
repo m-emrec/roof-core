@@ -7,4 +7,5 @@ enum CollectionEnum {
   guests,
   managers,
   managerRoles,
+  bannedUsers,
 }
