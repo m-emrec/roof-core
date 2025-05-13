@@ -9,7 +9,7 @@ import 'package:json_annotation/json_annotation.dart';
 part 'user_model.g.dart';
 
 @JsonSerializable()
-final class UserModel {
+class UserModel {
   UserModel({
     this.uid,
     this.name,
