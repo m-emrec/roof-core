@@ -50,9 +50,9 @@ class UserModel {
   )
   final DateTime? birthDate;
   final Gender? gender;
-  @JsonKey(toJson: _cityToJson)
+  @JsonKey(toJson: cityToJson)
   final City? livingCity;
-  @JsonKey(toJson: _cityToJson)
+  @JsonKey(toJson: cityToJson)
   final City? workCity;
   final String? occupation;
   final List<String>? hobbies;
@@ -127,7 +127,7 @@ class UserModel {
   static int convertStringToInteger(String? e) => int.tryParse(e ?? '') ?? 0;
 
   Map<String, dynamic> toJson() => _$UserModelToJson(this);
-  static Map<String, dynamic>? _cityToJson(City? city) => city?.toJson();
+  static Map<String, dynamic>? cityToJson(City? city) => city?.toJson();
   @override
   String toString() {
     // ignore: leading_newlines_in_multiline_strings
