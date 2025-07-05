@@ -46,7 +46,7 @@ class UserModel {
   @JsonKey(
     fromJson: FirebaseTimeParser.datetimeFromTimestamp,
     toJson: FirebaseTimeParser.dateTimeToTimestamp,
-    defaultValue: DateTime.now,
+    // defaultValue: DateTime.now,
   )
   final DateTime? birthDate;
   final Gender? gender;
