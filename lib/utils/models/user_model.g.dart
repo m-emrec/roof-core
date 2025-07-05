@@ -10,10 +10,8 @@ UserModel _$UserModelFromJson(Map<String, dynamic> json) => UserModel(
       uid: json['uid'] as String?,
       name: json['name'] as String?,
       about: json['about'] as String?,
-      birthDate: json['birthDate'] == null
-          ? DateTime.now()
-          : FirebaseTimeParser.datetimeFromTimestamp(
-              json['birthDate'] as Timestamp?),
+      birthDate: FirebaseTimeParser.datetimeFromTimestamp(
+          json['birthDate'] as Timestamp?),
       gender: $enumDecodeNullable(_$GenderEnumMap, json['gender']),
       livingCity: json['livingCity'] == null
           ? null

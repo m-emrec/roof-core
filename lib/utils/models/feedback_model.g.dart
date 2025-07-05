@@ -15,9 +15,10 @@ FeedbackModel _$FeedbackModelFromJson(Map<String, dynamic> json) =>
       feedbackSubTitle: $enumDecodeNullable(
           _$FeedbackSubTitlesEnumEnumMap, json['feedbackSubTitle']),
       response: json['response'] as String?,
-      createdAt: FirebaseTimeParser.datetimeFromTimestamp(
-              json['createdAt'] as Timestamp?) ??
-          DateTime.now(),
+      createdAt: json['createdAt'] == null
+          ? DateTime.now()
+          : FirebaseTimeParser.datetimeFromTimestamp(
+              json['createdAt'] as Timestamp?),
       imageUrls: (json['imageUrls'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList(),
