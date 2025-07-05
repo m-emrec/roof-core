@@ -18,7 +18,7 @@ FeedbackModel _$FeedbackModelFromJson(Map<String, dynamic> json) =>
       createdAt: json['createdAt'] == null
           ? DateTime.now()
           : FirebaseTimeParser.datetimeFromTimestamp(
-              json['createdAt'] as Timestamp?),
+              json['createdAt'] as Timestamp?)!,
       imageUrls: (json['imageUrls'] as List<dynamic>?)
           ?.map((e) => e as String)
           .toList(),
